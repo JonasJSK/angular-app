@@ -7,7 +7,7 @@ var ngAnnotate = require("gulp-ng-annotate");
 var paths = {
 	html: ["src/index.html", "src/app/**/*.html"],
 	js: ["src/app/**/*module.js", "src/app/**/*.js"],
-	less: ["src/less/normalize.less", "src/less/style.less", "src/less/**/*.less"]
+	less: ["src/less/bootstrap.less", "src/less/style.less", "src/less/**/*.less"]
 }
 
 gulp.task('build', ["js", "less", "html"]);
