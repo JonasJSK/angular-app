@@ -5,7 +5,7 @@ var concat = require("gulp-concat");
 var ngAnnotate = require("gulp-ng-annotate");
 
 var paths = {
-	html: ["src/**/*.html"],
+	html: ["src/index.html", "src/app/**/*.html"],
 	js: ["src/app/**/*module.js", "src/app/**/*.js"],
 	less: ["src/less/normalize.less", "src/less/style.less", "src/less/**/*.less"]
 }

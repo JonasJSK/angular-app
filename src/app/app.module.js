@@ -1,8 +1,17 @@
-(function() {
+(function () {
 	'use strict';
 
 	angular.module("app", [
-		"ui-router",
+		"ui.router",
 		"test"
-	]);
+	])
+		.config(function ($stateProvider, $urlRouterProvider) {
+			
+			$urlRouterProvider.otherwise("/");
+			
+			$stateProvider
+				.state("home", {
+					url: "/"
+				});
+		});
 })();
