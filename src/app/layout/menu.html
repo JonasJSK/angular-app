@@ -1,3 +1,7 @@
-menu:
-<br />
-<pre>{{vm.menu | json}}</pre>
+<ul class="nav nav-pills">
+	<li ng-repeat="item in vm.states" ui-sref-active="active">
+		<a ui-sref="{{item.name || ' '}}">
+			<i class="fa fa-{{item.menu.icon}}"></i> {{item.name || "empty"}}
+		</a>
+	</li>
+</ul>

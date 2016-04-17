@@ -3,9 +3,9 @@
 
 	angular
 		.module('app.layout')
-		.directive('menu', menu);
+		.directive('jkMenu', jkMenu);
 
-	function menu() {
+	function jkMenu() {
 		var directive = {
 			bindToController: true,
 			controller: MenuController,
@@ -22,9 +22,14 @@
 	}
 	
 	/* @ngInject */
-	function MenuController($stateProvider) {
+	function MenuController($state) {
 		var vm = this;
 		
-		vm.menu = $stateProvider;
+		vm.state = $state;
+		vm.states = $state.get().filter(function(state) {
+			return state.menu;
+		});
+		
+		console.log($state.get());
 	}
 })();

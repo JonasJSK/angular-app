@@ -1,7 +1,5 @@
 (function() {
 	'use strict';
 
-	angular.module('test', [
-		
-	]);
+	angular.module('app.test', []);
 })();

@@ -18,7 +18,9 @@ gulp.task('js', function () {
 		.pipe(ngAnnotate({
 			add: true
 		})).on("error", error)
-		.pipe(uglify())
+		.pipe(uglify({
+			mangle: true
+		}))
 		.pipe(gulp.dest("build"));
 });
 

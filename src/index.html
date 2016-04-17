@@ -5,14 +5,12 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 	<link rel="stylesheet" href="style.css">
 </head>
-<body>
-	<a ui-sref="test">To test</a>
-	<br />
-	hello!
-	<div ui-view></div>
-	<br />
-	<div menu></div>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+<body ng-cloak>
+	<div class="container">
+		<div jk-menu></div>
+		<div ui-view></div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js"></script>
 	<script src="app.js"></script>
 </body>
