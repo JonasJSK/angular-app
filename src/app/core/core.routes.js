@@ -9,6 +9,7 @@
 			$stateProvider
 				.state("home", {
 					url: "/",
+					template: "Angular Test App",
 					menu: {
 						text: "Home",
 						icon: "home"
