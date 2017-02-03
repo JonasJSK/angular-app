@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"tests done\""
+    "test": "./node_modules/.bin/gulp build"
   },
   "repository": {
     "type": "git",
